@@ -3,7 +3,7 @@
 local M = {}
 
 local DEFAULT_COLORS = {
-  bg = "#282A36",
+  bg = "#1E1F29",  
   fg = "#F8F8F2",
   selection = "#44475A",
   comment = "#6272A4",
@@ -21,7 +21,7 @@ local DEFAULT_COLORS = {
   bright_magenta = "#FF92DF",
   bright_cyan = "#A4FFFF",
   bright_white = "#FFFFFF",
-  menu = "#21222C",
+  menu = "#282A36",-- "#21222C",
   visual = "#3E4452",
   gutter_fg = "#4B5263",
   nontext = "#3B4048",
@@ -326,7 +326,7 @@ M.apply = function()
 	highlight("NvimTreeIndentMarker", colors.nontext, nil, nil, nil)
 	highlight("NvimTreeEmptyFolderName", colors.comment, nil, nil, nil)
 	highlight("NvimTreeFolderName", colors.fg, nil, nil, nil)
-	highlight("NvimTreeSpecialFile", colors.pink, nil, 'underline', nil)
+	highlight("NvimTreeSpecialFile", colors.ping, nil, "underline", nil)
 	highlight("NvimTreeOpenedFolderName", colors.fg, nil, nil, nil)
 	highlight("NvimTreeCursorLine", nil, colors.selection, nil, nil)
 	highlight("NvimTreeIn", nil, colors.selection, nil, nil)
